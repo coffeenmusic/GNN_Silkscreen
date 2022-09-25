@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+data/
+models/
+*.pkl
+*.pth
+scripts/History/
+scripts/__Previews/
+Archive/
