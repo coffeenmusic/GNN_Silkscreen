@@ -2,7 +2,7 @@
 The goal is to predict silkscreen placement using a graph neural network. This is still in the testing/training phase. I can currently get the loss to decrease by several orders of magnitude, but it's not yet sufficient for accurate placement predictions. I welcome any contributions to attempt to solve this problem and believe solving silk placement would be a good proof of concept that component placement is solvable with this same architecture. Also, if anyone knows of altium or cadence projects that could be used in training please let me know.
 
 # Getting Started
-- Export data using altium/cadence script
+- Export data using altium/cadence script or use the example.csv file in the data/train/ directory
 - Add data to projects' data/training/ directory
 - Add data to projects' data/test/ directory
 - Run training notebook (check data preprocessing)

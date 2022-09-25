@@ -1,5 +1,8 @@
 .ipynb_checkpoints
-data/
+data/train/*
+data/test/*
+data/predictions/*
+!data/train/example.csv
 models/
 *.pkl
 *.pth
