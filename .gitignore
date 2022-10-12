@@ -9,3 +9,5 @@ models/
 scripts/History/
 scripts/__Previews/
 Archive/
+__pycache__/
+*.xlsx
