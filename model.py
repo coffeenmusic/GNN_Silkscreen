@@ -15,6 +15,7 @@ categorical_cmp_features = pp['categorical_cmp_features']
 categorical_slk_features = pp['categorical_slk_features']
 categorical_trk_features = pp['categorical_trk_features']
 categorical_arc_features = pp['categorical_arc_features']
+rotation_to_class = pp['rotation_to_class']
 
 class GCN(torch.nn.Module):
     def __init__(self, hidden_channels=64, gnn_channels=512, type_dim=8, emb_dim=16, act=ReLU, do=0.4, gnn=SAGEConv, num_layers=1):
@@ -77,7 +78,7 @@ class GCN(torch.nn.Module):
         self.x_out = Linear(hidden_channels, 1)
         self.y_out = Linear(hidden_channels, 1)
         
-        self.rot_out = Linear(hidden_channels, 1)
+        self.rot_out = Linear(hidden_channels, len(rotation_to_class))
 
     def forward(self, x_dict, edge_index_dict): 
         # Component Type
